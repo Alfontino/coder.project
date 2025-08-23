@@ -89,3 +89,5 @@ img {
 
         /* ~alto de la barra */
 }
+.redes-sociales a{ color:#333; transition:transform .15s ease,color .15s ease; }
+.redes-sociales a:hover{ color: var(--brand, #1abc9c); transform: translateY(-1px); }
