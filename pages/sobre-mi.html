@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alfonso Mesón - Inicio</title>
+    <title>Alfonso Mesón| Sobre mí</title>
     <meta name="description" content="Portafolio y servicios de desarrollo web de Alfonso Mesón." />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <!-- Bootstrap CSS -->
@@ -43,38 +43,90 @@
 
         <section class="bg-light py-5 border-top border-bottom">
             <div class="container">
-                <header class="mb-4">
-                    <h2>Apasionado por la tecnología y la creatividad</h2>
-                    <p>Mi nombre es Alfonso Mesón, soy desarrollador web y amante del diseño digital. Disfruto crear
-                        soluciones funcionales y estéticas, combinando código limpio con experiencias visuales
-                        atractivas. Siempre estoy en busca de nuevos desafíos y aprendizajes.</p>
+                <header class="mb-4 text-center text-md-start">
+                    <h2 class="h3 mb-1">Sobre mí</h2>
+                    <p class="text-muted mb-0">Desarrollador web y docente de Ciencias Computacionales.</p>
                 </header>
-                <div class="row g-4">
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Maquetado responsivo</h3>
-                                <p class="card-text">Grillas fluidas, tipografía escalable y componentes accesibles.</p>
+
+                <div class="row g-4 align-items-center">
+                    <!-- Texto -->
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <article>
+                            <h3 class="h5">¿Quién soy?</h3>
+                            <p>
+                                Soy <strong>Alfonso Mesón</strong>. Dise&ntilde;o y construyo sitios <em>performantes,
+                                    accesibles y fáciles de mantener</em>.
+                                También soy docente de <strong>Ciencias Computacionales</strong>, donde enseño
+                                programación y algoritmos
+                                con enfoque en impacto social y buenas prácticas.
+                            </p>
+                            <ul class="mb-3">
+                                <li><strong>Front-end:</strong> HTML5, CSS3, Bootstrap 5, Grid &amp; Flexbox,
+                                    accesibilidad (a11y).</li>
+                                <li><strong>Back-end:</strong> Java / Spring Boot, PostgreSQL, Docker (según proyecto).
+                                </li>
+                                <li><strong>Workflow:</strong> Git &amp; GitHub, GitHub Pages, estructura semántica y
+                                    métricas Lighthouse.</li>
+                                <li><strong>Docencia:</strong> secuencias didácticas, rúbricas, y proyectos de
+                                    programación para jóvenes.</li>
+                            </ul>
+
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge rounded-pill text-bg-light border">Accesibilidad</span>
+                                <span class="badge rounded-pill text-bg-light border">Lighthouse 90+</span>
+                                <span class="badge rounded-pill text-bg-light border">Git &amp; GitHub</span>
+                                <span class="badge rounded-pill text-bg-light border">Java / Spring</span>
+                                <span class="badge rounded-pill text-bg-light border">Bootstrap 5</span>
                             </div>
+
+                            <a class="btn btn-outline-primary disabled" href="pages/sobre-mi.html">Ver perfil completo
+                                (en desarrollo)</a>
+                        </article>
+                    </div>
+
+                    <!-- Fotos -->
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="row g-3">
+                            <figure class="col-6">
+                                <img src="../assets/img/imagen-sobre-mi.webp"
+                                    alt="Alfonso Mesón, foto de perfil"
+                                    class="img-fluid rounded shadow-sm border" width="600" height="400" loading="lazy"
+                                    decoding="async" />
+                                <figcaption class="small text-muted mt-2">Perfil</figcaption>
+                            </figure>
+                            <figure class="col-6">
+                                <img src="../assets/img/imagen-sobre-mi-2.svg"
+                                    alt="Alfonso Mesón, en un evento"
+                                    class="img-fluid rounded shadow-sm border" width="600" height="400" loading="lazy"
+                                    decoding="async" />
+                                <figcaption class="small text-muted mt-2">Evento Campus Party 2024
+                                </figcaption>
+                            </figure>
                         </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Optimización</h3>
-                                <p class="card-text">Imágenes optimizadas, carga diferida y buenas métricas Lighthouse.
-                                </p>
-                            </div>
+                        <!-- Dos imágenes 50/50 debajo -->
+                        <div class="row g-3 mt-4">
+                            <figure class="col-12 col-md-6 m-0">
+                                <div
+                                    class="position-relative overflow-hidden rounded shadow-sm border ratio ratio-16x9">
+                                    <img src="../assets/img/iamgen-desarrollando.webp"
+                                        alt="Alfonso trabajando en prototipado y maquetado"
+                                        class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;"
+                                        loading="lazy" decoding="async" />
+                                </div>
+                                <figcaption class="small text-muted mt-2">Diseño y maquetado</figcaption>
+                            </figure>
+                            <figure class="col-12 col-md-6 m-0">
+                                <div
+                                    class="position-relative overflow-hidden rounded shadow-sm border ratio ratio-16x9">
+                                    <img src="../assets/img/imagen-dando-clases.webp"
+                                        alt="Alfonso dictando clase de programación a estudiantes"
+                                        class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;"
+                                        loading="lazy" decoding="async" />
+                                </div>
+                                <figcaption class="small text-muted mt-2">Docencia y acompañamiento</figcaption>
+                            </figure>
                         </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Docencia y tutoría</h3>
-                                <p class="card-text">Material didáctico, rúbricas y secuencias de clases de CC.</p>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
