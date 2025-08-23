@@ -1,0 +1,22 @@
+/* Variables CSS para paleta consistente */
+:root {
+    --brand: #1abc9c;
+    --brand-ink: #0b3f36;
+}
+
+/* Cambios sutiles sobre Bootstrap */
+.btn-primary {
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-primary:hover {
+    filter: brightness(0.95);
+}
+
+/* Enlaces de la navbar activos más visibles */
+.nav-link.active {
+    color: var(--brand-ink) !important;
+    font-weight: 600;
+    border-bottom: 2px solid var(--brand);
+}

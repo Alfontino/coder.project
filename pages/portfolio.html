@@ -1,92 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio | Alfonso Mesón</title>
-    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <meta name="description" content="Portafolio y servicios de desarrollo web de Alfonso Mesón." />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Mis estilos (primero overrides del framework, luego mis estilos) -->
+    <link rel="stylesheet" href="assets/css/bootstrap-custom.css" />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
 </head>
 
 <body>
-    <header class="barra-superior">
-        <div class="contenedor-logo">
-            <img src="../assets/img/logo.svg" width="200" alt="Logo de Alfonso Mesón" class="logo">
-            <p class="nombre">Alfonso Mesón</p>
-        </div>
-        <nav class="navegacion-principal">
-            <ul class="lista-nav">
-                <li class="item-nav"><a href="../index.html" class="enlace-nav">Home</a></li>
-                <li class="item-nav"><a href="sobre-mí.html" class="enlace-nav">Sobre mí</a></li>
-                <li class="item-nav"><a href="portfolio.html" class="enlace-nav">Portfolio</a></li>
-                <li class="item-nav"><a href="servicios.html" class="enlace-nav">Servicios</a></li>
-                <li class="item-nav"><a href="contacto.html" class="enlace-nav">Contacto</a></li>
-            </ul>
+    <header class="border-bottom">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Barra de navegación principal">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../assets/img/logo.svg" alt="Logo Alfonso Mesón" width="32" height="32" />
+                    <span class="fw-semibold">Alfonso Mesón</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"
+                    aria-controls="navMain" aria-expanded="false" aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navMain" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="ultimos-trabajos">
-            <div>
-                <h1 class="titulo-ultimos-trabajos">Últimos trabajos</h1>
-                <p class="parrafo-descripcion">Algunos de los proyectos más recientes que he realizado con pasión y compromiso.</p>
-            </div>
-            <div class = "contenedor-imagenes-portfolio">
-            <div>
-                <img class="imagen-portfolio" src="../assets/img/iamgen-portfolio.svg" alt="imagen-portfolio">
-                <p><strong>Tienda Alone</strong> – Desarrollo de sitio web responsive para e-commerce.</p>
-            </div>
-            <div>
-                <img class="imagen-portfolio" src="../assets/img/imagen-portfolio-2.svg" alt="imagen-portfolio-2">
-                <p><strong>Tienda Sky</strong> – Desarrollo de sitio web responsive para e-commerce.</p>
-            </div>
-            <div>
-                <img class="imagen-portfolio" src="../assets/img/imagen-portfolio-3.svg" alt="">
-                <p><strong>Tienda Ocean</strong> – Desarrollo de sitio web responsive para e-commerce.</p>
-            </div>
-            <div>
-                <img class="imagen-portfolio" src="../assets/img/imagen-portfolio-4.svg" alt="">
-                <p><strong>Tienda Deep</strong> – Desarrollo de sitio web responsive para e-commerce.</p>
-            </div>
-            </div>
-        </section>
-        <section class="seccion-testimonios">
-            <div class="testimonios">
-                <h2>Testimonios</h2>
-                <p>Lo que dicen quienes confiaron en mi trabajo</p>
-            </div>
-            <div class="opinion-cliente">
-                <img src="" alt="">
-                <p>“Sinceramente, la experiencia ha sido muy positiva. Alfonso entendió perfectamente lo que necesitábamos.”</p>
-                <h4>Felipe González</h4>
-                <h5>Empresario</h5>
-            </div>
-            <div class="opinion-cliente">
-                <img src="" alt="">
-                <p>“Me encantó el trabajo realizado. Profesional, rápido y con gran atención al detalle. Muy satisfecha.”</p>
-                <h4>Mercedes Rodríguez</h4>
-                <h5>Gerente de Ventas</h5>
+    <main id="contenido" class="py-5">
+
+        <section class="container py-5">
+            <h2 class="h3 mb-4">Últimos trabajos</h2>
+            <!-- Ejemplo de grilla con Bootstrap -->
+            <div class="row g-4">
+                <figure class="col-6 col-md-4 col-lg-3">
+                    <img class="img-fluid rounded border" src="../assets/img/iamgen-portfolio.svg"
+                        alt="imagen-portfolio" />
+                    <figcaption class="small mt-2">
+                        <p><strong>Tienda Alone</strong> Desarrollo de sitio web responsive para e-commerce.</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-6 col-md-4 col-lg-3">
+                    <img class="img-fluid rounded border" src="../assets/img/imagen-portfolio-2.svg"
+                        alt="imagen-portfolio-2" />
+                    <figcaption class="small mt-2">
+                        <p><strong>Tienda Sky</strong> Desarrollo de sitio web responsive para e-commerce.</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-6 col-md-4 col-lg-3">
+                    <img class="img-fluid rounded border" src="../assets/img/imagen-portfolio-3.svg"
+                        alt="imagen-portfolio-3" />
+                    <figcaption class="small mt-2">
+                        <p><strong>Tienda Ocean</strong> Desarrollo de sitio web responsive para e-commerce.</p>
+                    </figcaption>
+                </figure>
+                <figure class="col-6 col-md-4 col-lg-3">
+                    <img class="img-fluid rounded border" src="../assets/img/imagen-portfolio-4.svg"
+                        alt="imagen-portfolio-4" />
+                    <figcaption class="small mt-2">
+                        <p><strong>Tienda Deep</strong> Desarrollo de sitio web responsive para e-commerce.</p>
+                    </figcaption>
+                </figure>
+
             </div>
         </section>
 
+        <section class="seccion-testimonios py-5 bg-light border-top">
+            <div class="container">
+                <header class="testimonios text-center mb-5">
+                    <h2 class="h3 fw-bold mb-1">Testimonios</h2>
+                    <p class="text-muted mb-0">Lo que dicen quienes confiaron en mi trabajo</p>
+                </header>
 
+                <div class="row g-4">
+                    <article class="opinion-cliente col-12 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+                                <img src="assets/img/testimonio-felipe.jpg" alt="Foto de Felipe González"
+                                    class="rounded-circle mb-3 img-fluid" width="96" height="96"
+                                    style="object-fit:cover" />
+                                <figure class="mb-0">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-3">“Sinceramente, la experiencia ha sido muy positiva. Alfonso
+                                            entendió perfectamente lo que necesitábamos.”</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0">
+                                        <span class="fw-semibold">Felipe González</span>
+                                        <cite class="text-muted"> &mdash; Empresario</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
 
-
+                    <article class="opinion-cliente col-12 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body d-flex flex-column align-items-center text-center">
+                                <img src="assets/img/testimonio-mercedes.jpg" alt="Foto de Mercedes Rodríguez"
+                                    class="rounded-circle mb-3 img-fluid" width="96" height="96"
+                                    style="object-fit:cover" />
+                                <figure class="mb-0">
+                                    <blockquote class="blockquote">
+                                        <p class="mb-3">“Me encantó el trabajo realizado. Profesional, rápido y con gran
+                                            atención al detalle. Muy satisfecha.”</p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0">
+                                        <span class="fw-semibold">Mercedes Rodríguez</span>
+                                        <cite class="text-muted"> &mdash; Gerente de Ventas</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="pie-de-pagina">
-        <!-- Falta el pie de página que va acá-->
-        <p>© 2025 Alfonso Mesón</p>
-        <div class="redes-sociales">
-            <a href="https://uy.linkedin.com/in/alfonso-mes%C3%B3n-606a63310" target="_blank">
-                <img src="/assets/img/logo-linkedin.svg" alt="LinkedIn" class="icono-red-linkedin">
-                    
-            </a>
-
+    <footer class="py-4 border-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="mb-0 small text-muted">© <span id="year"></span> Alfonso Mesón. Todos los derechos reservados.</p>
+            <nav aria-label="Enlaces legales">
+                <a class="link-secondary me-3" href="#">Privacidad</a>
+                <a class="link-secondary" href="#">Términos</a>
+            </nav>
         </div>
     </footer>
 
-
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
 </body>
 
 </html>
