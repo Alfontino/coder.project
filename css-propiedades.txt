@@ -1,0 +1,109 @@
+📦 Box Model (se aplica a TODOS los elementos)
+
+Estas propiedades no dependen de Flexbox ni de Grid, siempre están disponibles:
+
+width, height → tamaño del contenido
+
+max-width, min-width, max-height, min-height
+
+margin → espacio externo (ej: margin: 10px)
+
+padding → espacio interno
+
+border → borde (ej: 2px solid black)
+
+box-sizing → cómo se calcula el tamaño (content-box | border-box)
+
+overflow → qué hacer si el contenido se desborda (hidden, scroll, auto)
+
+🔹 Flexbox (display: flex)
+
+Se usa para organizar ítems en una dimensión (fila o columna).
+
+En el contenedor (padre):
+
+display: flex → activa flexbox
+
+flex-direction → dirección (row, column, row-reverse, column-reverse)
+
+flex-wrap → si se ajustan en varias líneas (nowrap, wrap, wrap-reverse)
+
+flex-flow → shorthand (flex-direction + flex-wrap)
+
+justify-content → alineación eje principal
+
+align-items → alineación eje secundario
+
+align-content → alineación entre varias líneas de ítems
+
+gap, row-gap, column-gap → espacio entre ítems
+
+En los hijos (ítems):
+
+flex → abreviada (flex-grow flex-shrink flex-basis)
+
+flex-grow → cuánto puede crecer un ítem
+
+flex-shrink → cuánto puede encogerse
+
+flex-basis → tamaño inicial
+
+align-self → alineación individual del ítem
+
+🔷 Grid (display: grid)
+
+Se usa para organizar ítems en dos dimensiones (filas y columnas).
+
+En el contenedor (padre):
+
+display: grid / inline-grid
+
+grid-template-columns → define columnas (ej: 1fr 1fr 1fr)
+
+grid-template-rows → define filas
+
+grid-template-areas → organiza por nombres de áreas
+
+grid-auto-rows, grid-auto-columns → tamaño automático de filas/columnas
+
+grid-auto-flow → cómo se colocan los ítems (row, column, dense)
+
+gap, row-gap, column-gap
+
+justify-items → alinear ítems en columnas
+
+align-items → alinear ítems en filas
+
+place-items → shorthand (align-items + justify-items)
+
+justify-content → alinear TODA la grilla horizontalmente
+
+align-content → alinear TODA la grilla verticalmente
+
+place-content → shorthand (align-content + justify-content)
+
+En los hijos (ítems):
+
+grid-column-start, grid-column-end
+
+grid-row-start, grid-row-end
+
+grid-column (shorthand: start / end)
+
+grid-row (shorthand: start / end)
+
+grid-area → ubicar por nombre de área
+
+justify-self → alineación horizontal individual
+
+align-self → alineación vertical individual
+
+place-self → shorthand (align-self + justify-self)
+
+⚡ Diferencia rápida
+
+Box Model → tamaño, espacio y bordes de cada caja.
+
+Flexbox → organiza cajas en fila o columna (1D).
+
+Grid → organiza cajas en filas y columnas (2D).

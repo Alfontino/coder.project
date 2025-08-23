@@ -1,0 +1,1 @@
+Agrege un contenedor en el portfolio y le aplique GRID.
