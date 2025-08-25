@@ -41,48 +41,75 @@
     </header>
 
     <main id="contenido" class="py-5">
-
-        <section class="bg-light py-5 border-top border-bottom">
-            <div class="container">
-                <header class="mb-4">
-                    <h2 class="h3 mb-1">¡Hablemos!</h2>
-                    <p class="text-muted">¿Tenés una idea, consulta o proyecto en mente? Estoy disponible para ayudarte.
-                        No dudes en
-                        escribirme.</p>
-                </header>
-                <div class="row g-4">
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Maquetado responsivo</h3>
-                                <p class="card-text">Grillas fluidas, tipografía escalable y componentes accesibles.</p>
+        <!-- Sección de contacto -->
+        <section class="min-vh-100 d-flex align-items-center bg-white">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <!-- Información de contacto -->
+                    <div class="col-12 col-lg-5">
+                        <header class="mb-4">
+                            <h2 class="h3 mb-2 fw-bold">Contacto directo</h2>
+                            <p class="text-muted mb-4">¿Querés consultarme, pedir presupuesto o agendar una llamada?
+                                Escribime por cualquiera de estos medios:
+                            </p>
+                        </header>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3">
+                                <i class="bi bi-envelope-fill me-2 text-primary"></i>
+                                <a href="mailto:alfontinomeson@gmail.com"
+                                    class="link-primary fw-semibold">alfontinomeson@gmail.com</a>
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-whatsapp me-2 text-success"></i>
+                                <a href="https://wa.me/59899123456" target="_blank"
+                                    class="link-success fw-semibold">+598 99 651 522</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex gap-3">
+                            <a href="mailto:alfontinomeson@gmail.com" class="btn btn-primary">
+                                <i class="bi bi-envelope me-1"></i> Enviar email
+                            </a>
+                            <a href="https://wa.me/59899123456" target="_blank" class="btn btn-success">
+                                <i class="bi bi-whatsapp me-1"></i> WhatsApp directo
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Formulario de contacto -->
+                    <div class="col-12 col-lg-7">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h3 class="h5 mb-3">Enviame tu consulta</h3>
+                                <form action="mailto:alfontinomeson@gmail.com" method="POST" enctype="text/plain">
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="Nombre" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email" name="Email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensaje" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" name="Mensaje" rows="5"
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-send me-1"></i> Enviar mensaje
+                                    </button>
+                                </form>
+                                <div class="mt-3 text-muted small">
+                                    También podés contactarme por redes sociales al pie de la página.
+                                </div>
                             </div>
                         </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Optimización</h3>
-                                <p class="card-text">Imágenes optimizadas, carga diferida y buenas métricas Lighthouse.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Docencia y tutoría</h3>
-                                <p class="card-text">Material didáctico, rúbricas y secuencias de clases de CC.</p>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-       <footer class="py-4 border-top">
+    <footer class="py-4 border-top">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
             <!-- Izquierda -->
             <p class="mb-0 small text-muted">© <span id="year"></span> Alfonso Mesón. Todos los derechos reservados.</p>
@@ -96,10 +123,12 @@
             <!-- Derecha: redes sociales -->
             <div
                 class="redes-sociales d-flex flex-wrap align-items-center justify-content-center justify-content-md-end gap-3">
+                <!-- GitHub -->
                 <a href="https://github.com/Alfontino" target="_blank" rel="noopener" aria-label="GitHub"
                     class="text-decoration-none">
                     <i class="bi bi-github" style="font-size:1.6rem;"></i><span class="visually-hidden">GitHub</span>
                 </a>
+                <!-- Instagram -->
                 <a href="https://www.instagram.com/nanoeme5/" target="_blank" rel="noopener" aria-label="Instagram"
                     class="text-decoration-none">
                     <i class="bi bi-instagram" style="font-size:1.6rem;"></i><span
@@ -112,8 +141,8 @@
                         class="visually-hidden">LinkedIn</span>
                 </a>
                 <!-- Facebook -->
-                <a href="https://www.facebook.com/share/1W2KLAnWVV/" target="_blank" rel="noopener" aria-label="Facebook"
-                    class="text-decoration-none">
+                <a href="https://www.facebook.com/share/1W2KLAnWVV/" target="_blank" rel="noopener"
+                    aria-label="Facebook" class="text-decoration-none">
                     <i class="bi bi-facebook" style="font-size:1.6rem;"></i><span
                         class="visually-hidden">Facebook</span>
                 </a>

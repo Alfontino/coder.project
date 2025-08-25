@@ -43,67 +43,121 @@
     <main id="contenido" class="py-5">
 
 
-        <section class="bg-light py-5 border-top border-bottom">
-            <div class="container">
-                <header class="mb-4">
-                    <h2 class="h3 mb-1">Servicios</h2>
-                    <p class="text-muted">Diseño, prototipado, maquetado y desarrollo con enfoque en accesibilidad.</p>
-                </header>
-                <div class="row g-4">
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Maquetado responsivo</h3>
-                                <p class="card-text">Grillas fluidas, tipografía escalable y componentes accesibles.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Optimización</h3>
-                                <p class="card-text">Imágenes optimizadas, carga diferida y buenas métricas Lighthouse.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-12 col-md-6 col-lg-4">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Docencia y tutoría</h3>
-                                <p class="card-text">Material didáctico, rúbricas y secuencias de clases de CC.</p>
-                            </div>
-                        </div>
-                    </article>
+        <section class="min-vh-100 d-flex align-items-center" style="background-color: var(--brand); color: #fff;">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <header class="mb-4">
+                            <h2 class="display-5 fw-bold mb-3">Impulsa tu negocio con soluciones web profesionales
+                            </h2>
+                            <p class="lead mb-4">Transformo ideas en sitios web modernos, rápidos y accesibles. Mi
+                                enfoque
+                                combina diseño atractivo, desarrollo robusto y resultados medibles para que tu marca
+                                destaque
+                                y crezca.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Desarrollo personalizado y
+                                    escalable</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Optimización SEO y
+                                    performance</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Soporte y mantenimiento
+                                    continuo</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Integración con redes y
+                                    herramientas digitales</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Docencia y capacitación
+                                    para equipos</li>
+                            </ul>
+                            <a href="contacto.html" class="btn btn-light btn-lg fw-semibold">Solicitá tu presupuesto</a>
+                        </header>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="../assets/img/imagen-servicios.webp" alt="Servicios profesionales Alfonso Mesón"
+                            class="img-fluid rounded shadow-lg" style="max-width:400px;">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container py-5">
-            <h2 class="h3 mb-4">Últimos trabajos</h2>
-            <!-- Ejemplo de grilla con Bootstrap -->
-            <div class="row g-4">
-                <figure class="col-6 col-md-4 col-lg-3">
-                    <img class="img-fluid rounded border" src="assets/img/proyecto1.jpg"
-                        alt="Sitio para veterinaria con turnos online" />
-                    <figcaption class="small mt-2">Veterinaria del Yí</figcaption>
-                </figure>
-                <figure class="col-6 col-md-4 col-lg-3">
-                    <img class="img-fluid rounded border" src="assets/img/proyecto2.jpg"
-                        alt="Dashboard de reservas y pagos" />
-                    <figcaption class="small mt-2">Gestión de reservas</figcaption>
-                </figure>
-                <!-- más ítems... -->
+        <!-- Sección con Box Model y Flexbox -->
+        <section class="min-vh-100 d-flex align-items-center bg-light">
+            <div class="container py-5">
+                <!-- Ejemplo de Box Model y Flexbox -->
+                <!-- El contenedor usa flex para alinear los elementos y cada tarjeta aplica box model con padding, border y margin -->
+                <div class="d-flex flex-wrap gap-4 justify-content-center">
+                    <div class="card shadow"
+                        style="width: 18rem; padding: 1rem; border: 2px solid var(--brand); margin: 0.5rem;">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop" style="font-size:2rem; color:var(--brand);"></i>
+                            <h5 class="card-title mt-2">Desarrollo Web</h5>
+                            <p class="card-text">Sitios modernos, rápidos y seguros para tu negocio.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow"
+                        style="width: 18rem; padding: 1rem; border: 2px solid var(--brand); margin: 0.5rem;">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bar-chart-line" style="font-size:2rem; color:var(--brand);"></i>
+                            <h5 class="card-title mt-2">SEO & Performance</h5>
+                            <p class="card-text">Optimización para buscadores y velocidad de carga.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow"
+                        style="width: 18rem; padding: 1rem; border: 2px solid var(--brand); margin: 0.5rem;">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people" style="font-size:2rem; color:var(--brand);"></i>
+                            <h5 class="card-title mt-2">Capacitación</h5>
+                            <p class="card-text">Formación en programación y herramientas digitales.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Sección con Grid -->
+        <section class="min-vh-100 d-flex align-items-center bg-white">
+            <div class="container py-5">
+                <!-- Ejemplo de CSS Grid usando Bootstrap grid system -->
+                <!-- El row usa grid y cada col representa un área del grid -->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body text-center">
+                                <i class="bi bi-code-slash" style="font-size:2rem; color:var(--brand);"></i>
+                                <h5 class="card-title mt-2">Integraciones</h5>
+                                <p class="card-text">APIs, pagos online y sistemas externos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body text-center">
+                                <i class="bi bi-cloud-upload" style="font-size:2rem; color:var(--brand);"></i>
+                                <h5 class="card-title mt-2">Hosting & Deploy</h5>
+                                <p class="card-text">Publicación y mantenimiento en la nube.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body text-center">
+                                <i class="bi bi-shield-check" style="font-size:2rem; color:var(--brand);"></i>
+                                <h5 class="card-title mt-2">Seguridad</h5>
+                                <p class="card-text">Protección de datos y buenas prácticas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="py-4 border-top">
         <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
             <!-- Izquierda -->
-            <p class="mb-0 small text-muted">© <span id="year"></span> Alfonso Mesón. Todos los derechos reservados.</p>
+            <p class="mb-0 small text-muted">© <span id="year"></span> Alfonso Mesón. Todos los derechos reservados.
+            </p>
 
-            <!-- Centro (opcional: enlaces legales) -->
+            <!-- Centro (enlaces legales) -->
             <nav aria-label="Enlaces legales" class="d-flex gap-3">
                 <a class="link-secondary small" href="#">Privacidad</a>
                 <a class="link-secondary small" href="#">Términos</a>
@@ -112,10 +166,12 @@
             <!-- Derecha: redes sociales -->
             <div
                 class="redes-sociales d-flex flex-wrap align-items-center justify-content-center justify-content-md-end gap-3">
+                <!-- GitHub -->
                 <a href="https://github.com/Alfontino" target="_blank" rel="noopener" aria-label="GitHub"
                     class="text-decoration-none">
                     <i class="bi bi-github" style="font-size:1.6rem;"></i><span class="visually-hidden">GitHub</span>
                 </a>
+                <!-- Instagram -->
                 <a href="https://www.instagram.com/nanoeme5/" target="_blank" rel="noopener" aria-label="Instagram"
                     class="text-decoration-none">
                     <i class="bi bi-instagram" style="font-size:1.6rem;"></i><span
