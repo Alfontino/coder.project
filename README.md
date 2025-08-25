@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=alfontino" alt="alfontino" /></a> </p>
 
-- 🌱 I’m currently learning **Desarrollo Web en CoderHouse**
+- 🌱 I’m currently learning **Desarrollo Web in CoderHouse**
 
 - 📫 How to reach me **alfontinomeson@gmail.com**
 
