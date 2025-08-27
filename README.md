@@ -1,13 +1,9 @@
 <h1 align="center">Hi 👋, I'm Alfonso</h1>
 <h3 align="center">A passionate frontend developer from Uruguay</h3>
 
-<<<<<<< HEAD
-<p align="left"> <img src="../assets/img/alfonso.svg" alt="alfontino" /> </p>
-=======
-<p align="left"> <img src="assets\img\alfonso.svg" alt="alfontino" /> </p>
->>>>>>> main
+<p align="left"> <img src="assets/img/alfonso.svg" alt="alfontino" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=alfontino" alt="alfontino" /></a> </p>
+
 
 - 🌱 I’m currently learning **Desarrollo Web in CoderHouse**
 
