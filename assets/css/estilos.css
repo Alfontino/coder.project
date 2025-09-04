@@ -98,4 +98,72 @@ img {
 .redes-sociales a:hover {
   color: var(--brand, #1abc9c);
   transform: translateY(-1px);
+}
+
+/* Variables CSS para paleta consistente */
+:root {
+  --brand: #1abc9c;
+  --brand-ink: #0b3f36;
+}
+
+/* Cambios sutiles sobre Bootstrap */
+.btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+/* Enlaces de la navbar activos más visibles */
+.nav-link.active {
+  color: var(--brand-ink) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--brand);
+}
+
+/* FLEX en sección sobre mí*/
+.contenedor-flex {
+  display: flex;
+  justify-content: space-around;
+  /* espacio entre cajas */
+  align-items: center;
+  /* alineación vertical */
+  flex-wrap: wrap;
+  /* permite que salten de línea */
+  gap: 20px;
+  /* separación entre cajas */
+  border: 2px solid #333;
+  padding: 20px;
+}
+.contenedor-flex div {
+  color: white;
+  min-height: 150px;
+  align-content: center;
+}
+
+/*GRID en sección sobre mí*/
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columnas iguales */
+  grid-template-rows: repeat(2, 200px);
+  /* 2 filas de 200px cada una */
+  gap: 20px;
+  /* separación entre cajas */
+  border: 2px solid #333;
+  padding: 20px;
+}
+.contenedor-grid div {
+  color: white;
+}
+
+.box {
+  background: #1abc9c;
+  padding: 40px;
+  text-align: center;
+  flex: 1 1 200px;
+  /* crece, encoge, ancho mínimo */
+  border: solid black 1px;
 }/*# sourceMappingURL=estilos.css.map */
