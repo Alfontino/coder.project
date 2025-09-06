@@ -1,0 +1,23 @@
+/* Enlaces de la navbar activos más visibles */
+.nav-link.active {
+    color: var(--brand) !important;
+    font-weight: 600;
+}
+
+header {
+    &.border-bottom {
+        box-shadow: 0 2px 8px rgba(0,0,0,.04);
+    }
+
+    nav.navbar {
+        .nav-link {
+            &.active {
+                color: var(--brand);
+                font-weight: 600;
+            }
+            &:hover {
+                color: var(--brand-ink);
+            }
+        }
+    }
+}

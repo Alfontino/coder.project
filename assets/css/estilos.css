@@ -8,99 +8,21 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  /* evita overflow horizontal */
 }
-
-/* Contenedores amplios sin pegar al borde */
-.container {
+body .container {
   max-width: 1140px;
 }
-
-/* Utilidades propias */
-.section-title {
+body .section-title {
   letter-spacing: 0.2px;
 }
-
-/* Imagenes responsivas con límites */
-img {
+body img {
   max-width: 100%;
   height: auto;
 }
-
-/* Tarjetas uniformes */
-.card {
+body .card {
   border-radius: 1rem;
 }
 
-/* Media queries claras */
-@media (min-width: 992px) {
-  .hero-xl {
-    min-height: 60vh;
-  }
-}
-/* Accesibilidad: foco visible */
-:focus-visible {
-  outline: 3px solid var(--brand);
-  outline-offset: 2px;
-}
-
-/* Iconos sociales */
-.icono-red {
-  width: 28px;
-  height: 28px;
-  transition: transform 0.15s ease;
-}
-
-.redes-sociales a:hover .icono-red {
-  transform: scale(1.06);
-}
-
-.logo-cliente {
-  max-height: 48px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.85;
-  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
-}
-
-.logo-cliente:hover {
-  transform: scale(1.05);
-  filter: none;
-  opacity: 1;
-}
-
-/* Barra sticky mobile */
-.contacto-rapido {
-  background: rgba(255, 255, 255, 0.86);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.08);
-  z-index: 1030;
-  /* por encima de contenido, debajo de offcanvas si lo hubiera */
-  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 0.25rem);
-  /* iOS safe area */
-}
-
-/* Espacio al final de página para que no tape el contenido cuando se hace scroll hasta abajo */
-@media (max-width: 767.98px) {
-  body {
-    padding-bottom: 64px;
-  }
-  /* ~alto de la barra */
-}
-.redes-sociales a {
-  color: #333;
-  transition: transform 0.15s ease, color 0.15s ease;
-}
-
-.redes-sociales a:hover {
-  color: var(--brand, #1abc9c);
-  transform: translateY(-1px);
-}
-
-/* Variables CSS para paleta consistente */
 :root {
   --brand: #1abc9c;
   --brand-ink: #0b3f36;
@@ -116,54 +38,113 @@ img {
   filter: brightness(0.95);
 }
 
+/* Barra sticky mobile */
+.contacto-rapido {
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.08);
+  z-index: 1030;
+  /* por encima de contenido, debajo de offcanvas si lo hubiera */
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 0.25rem);
+  /* iOS safe area */
+}
+
 /* Enlaces de la navbar activos más visibles */
 .nav-link.active {
-  color: var(--brand-ink) !important;
+  color: var(--brand) !important;
   font-weight: 600;
-  border-bottom: 2px solid var(--brand);
+}
+
+header.border-bottom {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+header nav.navbar .nav-link.active {
+  color: var(--brand);
+  font-weight: 600;
+}
+header nav.navbar .nav-link:hover {
+  color: var(--brand-ink);
+}
+
+.logo-cliente {
+  max-height: 48px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+}
+.logo-cliente:hover {
+  transform: scale(1.05);
+  filter: none;
+  opacity: 1;
 }
 
 /* FLEX en sección sobre mí*/
-.contenedor-flex {
+.sobre-mi .contenedor-flex {
   display: flex;
-  justify-content: space-around;
-  /* espacio entre cajas */
-  align-items: center;
-  /* alineación vertical */
-  flex-wrap: wrap;
-  /* permite que salten de línea */
-  gap: 20px;
-  /* separación entre cajas */
-  border: 2px solid #333;
-  padding: 20px;
+  gap: 2rem;
 }
-.contenedor-flex div {
-  color: white;
-  min-height: 150px;
-  align-content: center;
+.sobre-mi .contenedor-flex div {
+  flex: 1 1 0;
+  padding: 1rem;
 }
-
-/*GRID en sección sobre mí*/
-.contenedor-grid {
+.sobre-mi .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* 2 columnas iguales */
-  grid-template-rows: repeat(2, 200px);
-  /* 2 filas de 200px cada una */
-  gap: 20px;
-  /* separación entre cajas */
-  border: 2px solid #333;
-  padding: 20px;
+  gap: 2rem;
 }
-.contenedor-grid div {
-  color: white;
+.sobre-mi .contenedor-grid div {
+  padding: 1rem;
+}
+.sobre-mi .box {
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 1.5px 6px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  background: #fff;
+  transition: box-shadow 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.sobre-mi .box:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 3px 12px rgba(0, 0, 0, 0.12);
 }
 
-.box {
-  background: #1abc9c;
-  padding: 40px;
-  text-align: center;
-  flex: 1 1 200px;
-  /* crece, encoge, ancho mínimo */
-  border: solid black 1px;
+/* Accesibilidad: foco visible */
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Iconos sociales */
+.redes-sociales a {
+  color: #333;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+.redes-sociales a .icono-red {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.15s ease;
+}
+.redes-sociales a:hover {
+  color: var(--brand, #1abc9c);
+  transform: translateY(-1px);
+}
+.redes-sociales a:hover .icono-red {
+  transform: scale(1.06);
+}
+
+/* Media queries claras */
+@media (min-width: 992px) {
+  .hero-xl {
+    min-height: 60vh;
+  }
+}
+/* Espacio al final de página para que no tape el contenido cuando se hace scroll hasta abajo */
+@media (max-width: 767.98px) {
+  body {
+    padding-bottom: 64px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

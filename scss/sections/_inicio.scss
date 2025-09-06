@@ -1,0 +1,13 @@
+.logo-cliente {
+        max-height: 48px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        opacity: .85;
+        transition: transform .2s ease, filter .2s ease, opacity .2s ease;
+
+        &:hover {
+                transform: scale(1.05);
+                filter: none;
+                opacity: 1;
+        }
+}
