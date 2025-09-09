@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @use 'variables' as v;
+@use 'mixins' as m;
 
 
 
@@ -42,11 +43,15 @@ body {
   align-items: center;
   gap: .5rem;
 }
-.tarjeta-contacto {
-    @extend .tarjeta-base;
-    text-align: center;
-    background-color: yellow;
+
+/* Clases donde se aplican Mixins */
+.tarjeta-primaria {
+  @include m.tarjeta-styles(1rem, .5rem, v.$primary-color, #ffffff);
 }
+.tarjeta-secundaria {
+  @include m.tarjeta-styles(1.5rem 2rem, 1rem, v.$secondary-color, #ffffff);
+}
+
 
 :root {
     --brand: #1abc9c;

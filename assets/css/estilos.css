@@ -35,9 +35,29 @@ body .card {
   gap: 0.5rem;
 }
 
-.tarjeta-contacto {
-  text-align: center;
-  background-color: yellow;
+/* Clases donde se aplican Mixins */
+.tarjeta-primaria {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #1abc9c;
+  color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tarjeta-secundaria {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background-color: #00CED1;
+  color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 :root {
