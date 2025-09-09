@@ -1,6 +1,10 @@
+@use 'base/variables';
 @use 'base/generales';
+@use 'base/mixins';
 @use 'components/header';
 @use 'sections/inicio';
 @use 'sections/sobre-mi';
+@use 'sections/contacto';
 @use 'components/footer';
 @use 'queries/queries';
+

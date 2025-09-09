@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Reseteos mínimos y tipografía */
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +20,24 @@ body img {
 }
 body .card {
   border-radius: 1rem;
+}
+
+/* Clase base para extend */
+.tarjeta-base, .tarjeta-contacto {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background-color: #00CED1;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tarjeta-contacto {
+  text-align: center;
+  background-color: yellow;
 }
 
 :root {
@@ -107,9 +124,10 @@ header nav.navbar .nav-link:hover {
   transition: background-color 0.3s;
 }
 .contenedor-flex div:hover {
-  background-color: #7eb9ae;
+  background-color: #00CED1;
 }
 
+/* GRID en sección sobre mí*/
 .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -123,7 +141,7 @@ header nav.navbar .nav-link:hover {
   transition: background-color 0.3s;
 }
 .contenedor-grid div:hover {
-  background-color: #7eb9ae;
+  background-color: #00CED1;
 }
 
 .box {
@@ -148,6 +166,11 @@ header nav.navbar .nav-link:hover {
 }
 .box img:hover {
   transform: scale(1.05);
+}
+
+.tarjeta-contacto {
+  text-align: center;
+  background-color: #00CED1;
 }
 
 /* Accesibilidad: foco visible */

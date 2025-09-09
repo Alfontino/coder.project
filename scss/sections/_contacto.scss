@@ -1,0 +1,7 @@
+@use '../base/variables';
+@use '../base/generales';
+.tarjeta-contacto {
+    @extend .tarjeta-base;
+    text-align: center;
+    background-color: variables.$secondary-color;
+}
