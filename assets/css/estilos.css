@@ -98,6 +98,13 @@ body .card {
   /* iOS safe area */
 }
 
+.linea-gradiente {
+  margin-top: 100px;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(90deg, #1abc9c, white);
+}
+
 /* Enlaces de la navbar activos más visibles */
 .nav-link.active {
   color: var(--brand) !important;
