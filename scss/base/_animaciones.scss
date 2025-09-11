@@ -11,7 +11,70 @@
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 100% 50%;
+    }
+}
+
+/* Animación de texto */
+@keyframes textoAnimado {
+    0% {
+        color: black;
+        opacity: 1;
+
+    }
+
+    50% {
+        color: v.$primary-color;
+        opacity: 1;
+    }
+
+    100% {
+        color: black;
+        opacity: 1;
+    }
+}
+
+.texto-animado {
+    animation: textoAnimado 3s infinite ease-in-out;
+    transition: color 0.5s, font-size 0.5s, opacity 0.5s, letter-spacing 0.5s;
+    display: inline-block;
+}
+
+/* Animación con transición y transformación al pasar el mouse */
+.elemento-animado-al-pasar-mouse {
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), background 0.4s;
+    background: #1abc9c;
+    border-radius: 1rem;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+
+    &:hover {
+        transform: scale(1.15) rotate(-5deg);
+        background: #0b3f36;
+    }
+}
+
+/* Animación constante con keyframes */
+.elemento-animado {
+    background: #1abc9c;
+    border-radius: 1rem;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.2rem;
+    animation: animacionTransform 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+}
+
+@keyframes animacionTransform {
+    0% {
+        transform: scale(1) rotate(0deg);
+        background: #1abc9c;
+    }
+
+    100% {
+        transform: scale(1.15) rotate(-5deg);
+        background: #0b3f36;
     }
 }
