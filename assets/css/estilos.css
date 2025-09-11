@@ -105,6 +105,21 @@ body .card {
   background-image: linear-gradient(90deg, #1abc9c, white);
 }
 
+/* Animación de gradiente de fondo */
+.animacionGradiente {
+  background: linear-gradient(90deg, #f8fafa, #1abc9c);
+  background-size: 200% 200%;
+  animation: animacionGradiente 5s infinite alternate;
+}
+
+@keyframes animacionGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 /* Enlaces de la navbar activos más visibles */
 .nav-link.active {
   color: var(--brand) !important;
