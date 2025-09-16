@@ -98,6 +98,83 @@ body .card {
   /* iOS safe area */
 }
 
+.linea-gradiente {
+  margin-top: 100px;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(90deg, #1abc9c, white);
+}
+
+/* Animación de gradiente de fondo */
+.animacionGradiente {
+  background: linear-gradient(90deg, #f8fafa, #1abc9c);
+  background-size: 200% 200%;
+  animation: animacionGradiente 5s infinite alternate;
+}
+
+@keyframes animacionGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* Animación de texto */
+@keyframes textoAnimado {
+  0% {
+    color: black;
+    opacity: 1;
+  }
+  50% {
+    color: #1abc9c;
+    opacity: 1;
+  }
+  100% {
+    color: black;
+    opacity: 1;
+  }
+}
+.texto-animado {
+  animation: textoAnimado 3s infinite ease-in-out;
+  transition: color 0.5s, font-size 0.5s, opacity 0.5s, letter-spacing 0.5s;
+  display: inline-block;
+}
+
+/* Animación con transición y transformación al pasar el mouse */
+.elemento-animado-al-pasar-mouse {
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), background 0.4s;
+  background: #1abc9c;
+  border-radius: 1rem;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.elemento-animado-al-pasar-mouse:hover {
+  transform: scale(1.15) rotate(-5deg);
+  background: #0b3f36;
+}
+
+/* Animación constante con keyframes */
+.elemento-animado {
+  background: #1abc9c;
+  border-radius: 1rem;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.2rem;
+  animation: animacionTransform 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate;
+}
+
+@keyframes animacionTransform {
+  0% {
+    transform: scale(1) rotate(0deg);
+    background: #1abc9c;
+  }
+  100% {
+    transform: scale(1.15) rotate(-5deg);
+    background: #0b3f36;
+  }
+}
 /* Enlaces de la navbar activos más visibles */
 .nav-link.active {
   color: var(--brand) !important;
