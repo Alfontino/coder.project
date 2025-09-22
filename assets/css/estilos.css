@@ -216,7 +216,7 @@ header nav.navbar .nav-link:hover {
   color: #fff;
   flex: 1 1 0;
   padding: 1rem;
-  background-color: #d8e0df;
+  background-color: rgb(255, 255, 255);
   align-content: center;
   transition: background-color 0.3s;
 }
@@ -232,7 +232,7 @@ header nav.navbar .nav-link:hover {
 }
 .contenedor-grid div {
   padding: 1rem;
-  background-color: #d8e0df;
+  background-color: rgb(255, 255, 255);
   color: #030303;
   align-content: center;
   transition: background-color 0.3s;
